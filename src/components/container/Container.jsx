@@ -10,4 +10,3 @@ function Container({children}) {
 
 export default Container
 
-// basically protect krte ya wrap krte
