@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import service from "../appwrite_services/conf";
 import { Container, PostCard } from "../components/index";
 
@@ -43,6 +43,5 @@ function Home() {
     </div>
   );
 }
-import { formatPostcssSourceMap } from "vite";
 
 export default Home;

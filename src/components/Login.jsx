@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { login as storeLogin } from "../store/authSlice";
 import { Button, Input, Logo } from "./index";
-import { UseDispatch, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import authService from "../appwrite_services/auth";
 import { useForm } from "react-hook-form";
 
@@ -41,7 +41,7 @@ function Login() {
           Sign in to your account
         </h2>
         <p className="mt-2 text-center text-base text-black/60">
-          Don&apos;t have any account?&nbsp; 
+          Don&apos;t have any account?&nbsp;
           <Link
             to="/signup"
             className="font-medium text-primary transition-all duration-200 hover:underline"
@@ -56,7 +56,8 @@ function Login() {
               label="Email: "
               placeholder="Enter your email"
               type="email"
-              {...register("email", {  //register has this weird syntax in hook form 
+              {...register("email", {
+                //register has this weird syntax in hook form
                 required: true,
                 validate: {
                   matchPatern: (value) =>

@@ -1,5 +1,4 @@
 import React, { forwardRef, useId } from "react";
-import { preprocessCSS } from "vite";
 
 function Select(
   {
